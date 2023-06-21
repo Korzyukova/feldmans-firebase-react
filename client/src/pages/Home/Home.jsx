@@ -1,10 +1,13 @@
 import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer";
+import WhatWeDo from "../../components/WhatWeDo/WhatWeDo";
+import Footer from "../../components/Footer/Footer";
+
 import "../Home/Home.css";
 export default function Home() {
     return (
       <>
        <Header />
+       <WhatWeDo />
        <Footer />
       </>
     );

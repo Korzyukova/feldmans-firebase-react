@@ -1,6 +1,7 @@
 
 import "../Header/Header.css";
 import logo from '../../images/logo.png';
+import city from '../../images/city.png';
 export default function Header() {
   const links = {
     link1: 'https://www.google.com',
@@ -19,6 +20,7 @@ export default function Header() {
           <a className="link" href={links.link4}>Contact Us</a>
           </div>
         </header>
+        <img className="header-picture" alt="city" src={city} />
       </>
     );
   }
