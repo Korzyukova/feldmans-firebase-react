@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap');
 
 .header {
     margin-top: 50px;
@@ -7,6 +7,7 @@
     background-color: aquamarine;
     width: 89vw;
     justify-content: space-between;
+    border-bottom: 2px solid #817979;
 }
 
 .header-logo {
