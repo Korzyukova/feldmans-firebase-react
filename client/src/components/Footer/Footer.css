@@ -1,8 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@300;400&display=swap');
+
 .footer {
     display: flex;
-    width: 89vw;
-    margin-top: 40px;
+    justify-content: space-between;
+    width: 85vw;
+    margin-top: 80px;
     margin-bottom: 40px;
-    background-color: aqua;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.footer-first {
+    width: 25vw;
+}
+
+.footer-logo {
+    width: 10vw;
+}
+.footer-text {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-second {
+    width: 20vw;
+}
+
+.footer-third {
+    width: 20vw;
+}
+
+.footer-contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-company {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    color:blue;
+    font-weight: bold;
 }
