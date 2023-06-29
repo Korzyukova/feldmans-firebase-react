@@ -1,5 +1,8 @@
 import "./Footer.css";
 import logo from '../../images/logo.png';
+import location from '../../images/location.png';
+import email from '../../images/email.png';
+import call from '../../images/call.png';
 export default function Footer() {
     return (
       <>
@@ -14,9 +17,9 @@ non-profit and advocacy organizations.</p>
            <div className="footer-second">
            <ul className="footer-contact">
             <li className="name">Get in Touch</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
+            <li className="footer-string"><img className="footer-icon" alt="location" src={location} /> New York, Pennsylvania</li>
+            <li className="footer-string"><img className="footer-icon" alt="location" src={email} />info@feldmansgroup.com</li>
+            <li className="footer-string"><img className="footer-icon" alt="location" src={call} />+1 929 366 4037</li>
            </ul>
            </div>
            <div className="footer-third">

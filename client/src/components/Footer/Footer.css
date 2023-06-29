@@ -4,8 +4,8 @@
     display: flex;
     justify-content: space-between;
     width: 85vw;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -19,6 +19,7 @@
 
 .footer-logo {
     width: 10vw;
+    margin-bottom: 26px;
 }
 .footer-text {
     margin: 0;
@@ -46,6 +47,23 @@
 }
 
 .name {
-    color:blue;
+    color: #3A86FF;
     font-weight: bold;
+    margin-bottom: 26px;
+    font-size: 18px;
+}
+
+.footer-icon {
+    width: 1.5vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.footer-string {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
 }

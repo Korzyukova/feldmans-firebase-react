@@ -5,11 +5,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/Home/Home';
+import AboutUs from './pages/AboutUs/AboutUs';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/aboutus",
+    element: <AboutUs />,
   },
 ]);
 
