@@ -1,4 +1,4 @@
-import "../WhatWeDo/WhatWeDo.css";
+import "./WhatWeDo.css";
 
 export default function WhatWeDo() {
     return (

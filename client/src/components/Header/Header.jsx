@@ -1,5 +1,5 @@
 
-import "../Header/Header.css";
+import "./Header.css";
 import logo from '../../images/logo.png';
 import city from '../../images/city.png';
 export default function Header() {
