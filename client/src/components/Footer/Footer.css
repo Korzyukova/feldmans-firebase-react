@@ -67,3 +67,11 @@
     align-items: center;
     margin-bottom: 10px;
 }
+.footer-link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-link:hover {
+    font-size: 19px;
+}
