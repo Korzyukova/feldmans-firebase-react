@@ -25,10 +25,10 @@ non-profit and advocacy organizations.</p>
            <div className="footer-third">
            <ul className="footer-company">
            <li className="name">Company</li>
-           <li>Home</li>
-           <li>About Us</li>
-           <li>Clients & Experience</li>
-           <li>Contact Us</li>
+           <li><a className="header__links-movies" href="/">Home</a></li>
+           <li><a className="header__links-movies" href="/aboutus">About Us</a></li>
+           <li><a className="header__links-movies" href="/clients">Clients & Experience</a></li>
+           <li><a className="header__links-movies" href="/contacts">Contact Us</a></li>
            </ul>
            </div>
         </footer>

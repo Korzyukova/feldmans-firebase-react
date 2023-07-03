@@ -4,10 +4,10 @@ import logo from '../../images/logo.png';
 import city from '../../images/city.png';
 export default function Header() {
   const links = {
-    link1: 'https://www.google.com',
-    link2: 'https://www.reddit.com',
-    link3: 'https://www.korzuk.com',
-    link4: 'https://www.korzuk.com',
+    link1: '/',
+    link2: '/aboutus',
+    link3: '/clients',
+    link4: '/contact-us',
 };
     return (
       <>
