@@ -54,14 +54,12 @@ const ContactForm = () => {
 
   return (
     <div className='form'>
-      
-          <div className='col-12 text-center'>
-            <div className='contactForm'>
+    
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
             
-                <div className='row formRow'>
-                  <div className='col-6'>
+                <div className='row'>
+                  <div className='contactform'>
                     <input
                       type='text'
                       name='name'
@@ -78,7 +76,7 @@ const ContactForm = () => {
                     {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
                   </div>
                   
-                  <div className='col-6'>
+                  <div className='contactform'>
                     <input
                       type='email'
                       name='email'
@@ -96,9 +94,9 @@ const ContactForm = () => {
                 </div>
 
                 <div className='formRow'>
-                  <div className='col'>
+                  <div className='messageform'>
                     <textarea
-                      rows={3}
+                      rows={8}
                       name='message'
                       {...register('message', {
                         required: true
@@ -108,17 +106,18 @@ const ContactForm = () => {
                     ></textarea>
                     {errors.message && <span className='errorMessage'>Please enter a message</span>}
                   </div>
-                </div>
+                 </div>
 
-                
+
                 <button className='submit-btn' type='submit'>
                   Submit
                 </button>
               </form>
-            </div>
+            
+
             <ToastContainer />
+
           </div>
-        </div>
      
   );
 };
