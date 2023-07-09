@@ -10,7 +10,7 @@ In addition to political campaigns, we work with non-profit, social advocacy, an
         
             <h1 className="first">POLITICAL CONSULTING</h1>
         
-<ul>
+<ul className="clients">
 <li>Michael Helfrich for York City Mayor (City of York, PA)</li>
 <li>Steve Snell for PA House of Representatives (PA-LD 94)</li>
 <li>Mayor Shawn Mauck for State Senate (PA-SD 28)</li>
@@ -19,7 +19,7 @@ In addition to political campaigns, we work with non-profit, social advocacy, an
 
 <h1 className="first">NON-PROFIT & SOCIAL ADVOCACY CONSULTING</h1>
         
-<ul>
+<ul className="clients">
 <li>Bro2Go Ex-Offender Program and Brotherhood (York, PA)</li>
 
 </ul>

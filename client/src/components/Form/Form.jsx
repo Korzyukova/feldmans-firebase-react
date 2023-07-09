@@ -53,13 +53,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='ContactForm'>
-      <div className='container'>
-        <div className='row'>
+    <div className='form'>
+      
           <div className='col-12 text-center'>
             <div className='contactForm'>
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
+            
                 <div className='row formRow'>
                   <div className='col-6'>
                     <input
@@ -77,6 +77,7 @@ const ContactForm = () => {
                     ></input>
                     {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
                   </div>
+                  
                   <div className='col-6'>
                     <input
                       type='email'
@@ -86,36 +87,15 @@ const ContactForm = () => {
                         pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
                       })}
                       className='form-control formInput'
-                      placeholder='Email address'
+                      placeholder='Email'
                     ></input>
                     {errors.email && (
                       <span className='errorMessage'>Please enter a valid email address</span>
                     )}
                   </div>
                 </div>
-                {/* Row 2 of form */}
-                <div className='row formRow'>
-                  <div className='col'>
-                    <input
-                      type='text'
-                      name='subject'
-                      {...register('subject', {
-                        required: { value: true, message: 'Please enter a subject' },
-                        maxLength: {
-                          value: 75,
-                          message: 'Subject cannot exceed 75 characters'
-                        }
-                      })}
-                      className='form-control formInput'
-                      placeholder='Subject'
-                    ></input>
-                    {errors.subject && (
-                      <span className='errorMessage'>{errors.subject.message}</span>
-                    )}
-                  </div>
-                </div>
-                {/* Row 3 of form */}
-                <div className='row formRow'>
+
+                <div className='formRow'>
                   <div className='col'>
                     <textarea
                       rows={3}
@@ -129,6 +109,8 @@ const ContactForm = () => {
                     {errors.message && <span className='errorMessage'>Please enter a message</span>}
                   </div>
                 </div>
+
+                
                 <button className='submit-btn' type='submit'>
                   Submit
                 </button>
@@ -137,8 +119,7 @@ const ContactForm = () => {
             <ToastContainer />
           </div>
         </div>
-      </div>
-    </div>
+     
   );
 };
 
