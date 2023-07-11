@@ -1,77 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@300;400&display=swap');
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    width: 85vw;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+  width: 85vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .footer-first {
-    width: 25vw;
+  width: 25vw;
 }
 
 .footer-logo {
-    width: 10vw;
-    margin-bottom: 26px;
+  width: 10vw;
+  margin-bottom: 26px;
 }
 .footer-text {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-second {
-    width: 20vw;
+  width: 20vw;
 }
 
 .footer-third {
-    width: 20vw;
+  width: 20vw;
 }
 
 .footer-contact {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-company {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .name {
-    color: #3A86FF;
-    font-weight: bold;
-    margin-bottom: 26px;
-    font-size: 18px;
+  color: #3a86ff;
+  font-weight: bold;
+  margin-bottom: 26px;
+  font-size: 18px;
 }
 
 .footer-icon {
-    width: 1.5vw;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    margin-right: 10px;
+  width: 1.5vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
 }
 
 .footer-string {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .footer-link {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .footer-link:hover {
-    font-size: 19px;
+  font-size: 19px;
 }

@@ -1,35 +1,32 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from './pages/Home/Home';
-import AboutUs from './pages/AboutUs/AboutUs';
-import Clients from './pages/Clients/Clients';
-import ContactUs from './pages/ContactUs/ContactUs';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Home from './pages/Home/Home'
+import AboutUs from './pages/AboutUs/AboutUs'
+import Clients from './pages/Clients/Clients'
+import ContactUs from './pages/ContactUs/ContactUs'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Home />,
   },
   {
-    path: "/aboutus",
+    path: '/aboutus',
     element: <AboutUs />,
   },
   {
-    path: "/clients",
+    path: '/clients',
     element: <Clients />,
   },
   {
-    path: "/contact-us",
+    path: '/contact-us',
     element: <ContactUs />,
   },
-]);
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

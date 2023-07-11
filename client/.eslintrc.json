@@ -1,13 +1,24 @@
 {
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
     "env": {
         "browser": true,
-        "commonjs": true,
+        "node": true,
         "es2021": true
     },
-    "extends": "airbnb",
-    "parserOptions": {
-        "ecmaVersion": "latest"
-    },
+    "plugins": ["prettier", "react"],
+    "extends": ["plugin:react/recommended", "prettier"],
     "rules": {
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off"
+    },
+    "settings": {
+        "react": {
+          "version": "detect"
+        }
     }
 }
