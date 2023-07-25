@@ -3,7 +3,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  width: 85vw;
+  /* width: 85vw; */
   margin-top: 50px;
   margin-bottom: 50px;
   font-family: 'Raleway';

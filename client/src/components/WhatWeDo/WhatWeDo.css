@@ -6,13 +6,13 @@
   width: 85vw;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .first {
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 28px;
   line-height: 28px;
   font-weight: bold;
@@ -23,14 +23,14 @@
 .second {
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 24px;
   line-height: 28px;
 }
 
 .whatwedolist {
-margin-top: 30px;
-list-style-type: none;
+  margin-top: 30px;
+  list-style-type: none;
 }
 
 .string {
