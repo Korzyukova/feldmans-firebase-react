@@ -16,6 +16,7 @@ export default function Header() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
+
   return (
     <>
       <header className="header">
