@@ -12,8 +12,15 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 1.5em;
+  line-height: 1.5em;
   font-weight: normal;
   color: rgb(0, 44, 83);
+}
+
+@media (max-width: 1000px) {
+  .greeting {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
 }

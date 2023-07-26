@@ -14,20 +14,32 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5em;
+  line-height: 1.5em;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 1000px) {
+  .clients {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
 }
 
 .first {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 1.5em;
+  line-height: 1.5em;
   font-weight: bold;
   color: rgb(0, 44, 83);
   margin-top: 40px;
+}
+@media (max-width: 1000px) {
+  .first {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
 }

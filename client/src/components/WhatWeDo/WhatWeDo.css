@@ -13,19 +13,30 @@
   font-family: 'Raleway';
   font-style: normal;
   /* font-weight: 400; */
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 1.5em;
+  line-height: 1.5em;
   font-weight: bold;
   color: rgb(0, 44, 83);
   margin-bottom: 30px;
 }
-
+@media (max-width: 1000px) {
+  .first {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+}
 .second {
   font-family: 'Raleway';
   font-style: normal;
   /* font-weight: 400; */
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+@media (max-width: 1000px) {
+  .second {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
 }
 
 .whatwedolist {
