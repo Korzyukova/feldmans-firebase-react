@@ -7,7 +7,7 @@
   /* width: 85vw; */
   justify-content: space-between;
   border-bottom: 3px solid #817979;
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5); */
 }
 
 .header-logo {
@@ -44,7 +44,7 @@
 .burger-menu {
   display: none;
   cursor: pointer;
-  margin-bottom: 30px;
+
 }
 
 .bar {
@@ -56,7 +56,15 @@
 }
 
 .mobile-menu {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: white;
   position: fixed;
   top: 0;
@@ -68,7 +76,6 @@
 .open {
   display: flex !important;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 .close-menu {
