@@ -42,6 +42,9 @@ export default function Header() {
         </div>
       </header>
       <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`} ref={menuRef}>
+      <div className="close-menu" onClick={toggleMenu}>
+          &#10005;
+        </div>
         <a className="link" href={links.link1}>
           Home
         </a>
@@ -54,9 +57,6 @@ export default function Header() {
         <a className="link" href={links.link4}>
           Contact Us
         </a>
-        <div className="close-menu" onClick={toggleMenu}>
-          &#10005;
-        </div>
       </div>
       <img className="header-picture" alt="city" src={city} />
     </>
