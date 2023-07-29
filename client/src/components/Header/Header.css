@@ -76,9 +76,9 @@
 }
 
 .close-menu {
-  font-size: 1.2em;
   cursor: pointer;
-  
+  font-size: 2em;
+   line-height: 2em;
 }
 
 .link:hover {
@@ -98,6 +98,7 @@
   }
 }
 
+
 @media (max-width: 780px) {
   .header-logo {
     width: 30%;
@@ -113,5 +114,13 @@
 
   .mobile-menu {
     display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .link {
+   font-size: 2em;
+   line-height: 2em;
+
   }
 }
