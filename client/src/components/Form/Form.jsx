@@ -3,6 +3,27 @@ import emailjs from 'emailjs-com'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 import './Form.css'
+import { doc, setDoc, getFirestore } from "firebase/firestore"
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA4ufeeesjva37mAR3zpqpAi30XNCcmTi4",
+  authDomain: "feldmans-73cb5.firebaseapp.com",
+  projectId: "feldmans-73cb5",
+  storageBucket: "feldmans-73cb5.appspot.com",
+  messagingSenderId: "938683646758",
+  appId: "1:938683646758:web:6199e264850057298ab7e7",
+  measurementId: "G-4XPW96J4M1"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+const db = getFirestore(app)
 
 const ContactForm = () => {
   const {
@@ -29,21 +50,16 @@ const ContactForm = () => {
   // Function called on submit that uses emailjs to send email of valid contact form
   const onSubmit = async (data) => {
     // Destrcture data object
-    const { name, email, subject, message } = data
+    const { name, email, message } = data
     try {
-      const templateParams = {
+      await setDoc(doc(db, "mail",`${name}-${Date.now()}`), {
         name,
-        email,
-        subject,
-        message,
-      }
-
-      await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        templateParams,
-        process.env.REACT_APP_USER_ID,
-      )
+        to: "korzioukova@gmail.com",
+        message: {
+          subject: "New submission on contact form!",
+          text: `${name}, submitted a request on your advocacy site contact form.\nName: ${name}\nEmail: ${email}\nMessage: ${message}`
+        }
+      })
 
       reset()
       toastifySuccess()
