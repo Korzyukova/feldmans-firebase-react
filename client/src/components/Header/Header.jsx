@@ -1,6 +1,6 @@
 import './Header.css'
 import logo from '../../images/logo3.png'
-import city from '../../images/city.png'
+import city from '../../images/city3.png'
 import { useState, useRef } from 'react'
 export default function Header() {
   const links = {

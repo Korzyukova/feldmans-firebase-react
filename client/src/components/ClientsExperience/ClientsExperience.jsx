@@ -21,20 +21,7 @@ export default function ClientsExperience() {
         and has since been operated from outside of Russia.
         </h2>
 
-        <h1 className="first">POLITICAL CONSULTING</h1>
-
-        <ul className="clients">
-          <li>Michael Helfrich for York City Mayor (City of York, PA)</li>
-          <li>Steve Snell for PA House of Representatives (PA-LD 94)</li>
-          <li>Mayor Shawn Mauck for State Senate (PA-SD 28)</li>
-          <li>Shavonnia Corbin-Johnson for Congress (PA-CD 10)</li>
-        </ul>
-
-        <h1 className="first">NON-PROFIT & SOCIAL ADVOCACY CONSULTING</h1>
-
-        <ul className="clients">
-          <li>Bro2Go Ex-Offender Program and Brotherhood (York, PA)</li>
-        </ul>
+        
       </div>
     </>
   )
