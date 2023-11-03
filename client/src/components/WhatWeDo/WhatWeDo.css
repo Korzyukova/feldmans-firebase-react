@@ -39,11 +39,15 @@
     line-height: 1.3em;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .second {
     font-size: 1.1em;
     line-height: 1.1em;
   }
+  .whatwedo {
+    margin-bottom: 0px;
+  }
+  
 }
 
 .whatwedolist {

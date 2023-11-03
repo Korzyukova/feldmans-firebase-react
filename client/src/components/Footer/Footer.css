@@ -46,6 +46,9 @@
   .footer-logo {
     display: none;
   }
+  .footer-text {
+    display: none;
+  }
 }
 
 .footer-text {
@@ -142,4 +145,12 @@
 
 .footer-link:hover {
   font-size: 19px;
+}
+@media (max-width: 500px) {
+  .footer-string {
+    font-size: 1.2em;
+  }
+  .footer {
+    margin-top: 10px;
+  }
 }

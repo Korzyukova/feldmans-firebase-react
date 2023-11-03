@@ -38,7 +38,7 @@
 
 .header-picture {
   margin-top: 40px;
-  width: 85vw;
+  width: 90vw;
 }
 
 .burger-menu {
@@ -116,12 +116,26 @@
   .mobile-menu {
     display: none;
   }
+  .link {
+    font-size: 1.5em;
+    line-height: 2em;
+   }
 }
-
+/* 
 @media (max-width: 780px) {
   .link {
    font-size: 1.5em;
    line-height: 2em;
 
   }
+} */
+
+@media (max-width: 500px) {
+  .header-logo {
+    width: 45%;
+  }
+  .header-picture {
+    margin-top: 30px;
+  }
+
 }

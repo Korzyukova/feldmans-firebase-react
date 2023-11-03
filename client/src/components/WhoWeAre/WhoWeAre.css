@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   width: 85vw;
-  /* margin-top: 40px; */
   padding-bottom: 40px;
   margin-left: 10px;
 }
@@ -17,7 +16,6 @@
   line-height: 1.5em;
   font-weight: bold;
   color: rgb(0, 44, 83);
-  /* margin-bottom: 30px; */
 }
 @media (max-width: 1000px) {
   .first {
@@ -39,12 +37,6 @@
     line-height: 1.3em;
   }
 }
-@media (max-width: 400px) {
-  .second {
-    font-size: 1.1em;
-    line-height: 1.1em;
-  }
-}
 
 .us {
   font-family: 'Raleway';
@@ -63,9 +55,17 @@
     line-height: 1.3em;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+  .second {
+    font-size: 1.1em;
+    line-height: 1.1em;
+  }
   .us {
     font-size: 1.1em;
     line-height: 1.1em;
   }
+  .whoweare {
+    padding-bottom: 0px;
+  }
+  
 }

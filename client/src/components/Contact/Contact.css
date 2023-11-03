@@ -27,9 +27,12 @@
     line-height: 1.3em;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .greeting {
     font-size: 1.1em;
     line-height: 1.1em;
+  }
+  .name {
+    text-align: center;
   }
 }
