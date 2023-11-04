@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './pages/Home/Home'
-import AboutUs from './pages/AboutUs/AboutUs'
-import Clients from './pages/Clients/Clients'
-import ContactUs from './pages/ContactUs/ContactUs'
+import {Home, ContactUs, Clients, AboutUs} from './pages'
+import Header from './components/Header/Header'
+import './style/index.css'
+import Footer from './components/Footer/Footer'
 
 const router = createBrowserRouter([
   {
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: '/aboutus',
+    path: '/about-us',
     element: <AboutUs />,
   },
   {
@@ -27,6 +27,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Header />
     <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>,
 )

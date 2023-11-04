@@ -2,13 +2,11 @@ import Header from '../../components/Header/Header'
 import WhatWeDo from '../../components/WhatWeDo/WhatWeDo'
 import Footer from '../../components/Footer/Footer'
 
-import './Home.css'
-export default function Home() {
+
+export function Home() {
   return (
     <>
-      <Header />
       <WhatWeDo />
-      <Footer />
     </>
   )
 }

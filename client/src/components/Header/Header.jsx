@@ -5,7 +5,7 @@ import { useState, useRef } from 'react'
 export default function Header() {
   const links = {
     link1: '/',
-    link2: '/aboutus',
+    link2: '/about-us',
     link3: '/clients',
     link4: '/contact-us',
   }

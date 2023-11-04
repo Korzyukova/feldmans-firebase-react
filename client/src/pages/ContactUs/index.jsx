@@ -3,14 +3,11 @@ import Footer from '../../components/Footer/Footer'
 import Contact from '../../components/Contact/Contact'
 import ContactForm from '../../components/Form/Form'
 
-import './ContactUs.css'
-export default function Home() {
+export function ContactUs() {
   return (
     <>
-      <Header />
       <Contact />
       <ContactForm />
-      <Footer />
     </>
   )
 }
