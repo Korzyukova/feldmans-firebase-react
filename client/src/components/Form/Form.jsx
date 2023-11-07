@@ -10,13 +10,13 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyA4ufeeesjva37mAR3zpqpAi30XNCcmTi4",
-  authDomain: "feldmans-73cb5.firebaseapp.com",
-  projectId: "feldmans-73cb5",
-  storageBucket: "feldmans-73cb5.appspot.com",
-  messagingSenderId: "938683646758",
-  appId: "1:938683646758:web:6199e264850057298ab7e7",
-  measurementId: "G-4XPW96J4M1"
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
@@ -54,7 +54,7 @@ const ContactForm = () => {
     try {
       await setDoc(doc(db, "mail",`${name}-${Date.now()}`), {
         name,
-        to: "korzioukova@gmai.com",
+        to: ["pavel@ivlev.net", "korzioukova@gmail.com"],
         message: {
           subject: "New submission on contact form!",
           text: `${name}, submitted a request on your advocacy site contact form.\nName: ${name}\nEmail: ${email}\nMessage: ${message}`
