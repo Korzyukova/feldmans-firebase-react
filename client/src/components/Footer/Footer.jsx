@@ -1,5 +1,5 @@
 import './Footer.css'
-import logo from '../../images/logo3.png'
+import logo from '../../images/logo4.svg'
 import location from '../../images/location.png'
 import email from '../../images/email.png'
 import call from '../../images/call.png'
