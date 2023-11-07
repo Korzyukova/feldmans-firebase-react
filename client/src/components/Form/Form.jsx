@@ -54,7 +54,7 @@ const ContactForm = () => {
     try {
       await setDoc(doc(db, "mail",`${name}-${Date.now()}`), {
         name,
-        to: "pavel@ivlev.net",
+        to: "korzioukova@gmai.com",
         message: {
           subject: "New submission on contact form!",
           text: `${name}, submitted a request on your advocacy site contact form.\nName: ${name}\nEmail: ${email}\nMessage: ${message}`

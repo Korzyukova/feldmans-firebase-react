@@ -41,7 +41,11 @@
 .footer-logo {
   height: 5vh;
 }
-
+ 
+.email-link{
+  text-decoration: none;
+  color: black;
+}
 @media (max-width: 700px) {
   .footer-logo {
     display: none;

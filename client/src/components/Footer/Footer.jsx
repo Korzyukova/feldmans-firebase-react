@@ -23,7 +23,7 @@ export default function Footer() {
             </li>
             <li className="footer-string">
               <img className="footer-icon" alt="location" src={email} />
-              pavel@ivlev.net
+              <a className="email-link" href='mailto:pavel@ivlev.net'>pavel@ivlev.net</a>
             </li>
             <li className="footer-string">
               <img className="footer-icon" alt="location" src={call} />
